@@ -58,6 +58,52 @@ $ pnpm run test:e2e
 $ pnpm run test:cov
 ```
 
+## API
+
+### /auth/userinfo
+request
+```json
+need access token with Authorization header
+```
+response
+```json
+{
+  "sub": "",
+  "email_verified": true,
+  "name": "Seongyeon Cho",
+  "groups": [ "" ],
+  "preferred_username": "yeonnnnjs",
+  "given_name": "Seongyeon",
+  "family_name": "Cho",
+  "email": "sungyeon52@gmail.com"
+}
+```
+
+### /auth/token
+request
+```json
+{
+  "code": "",
+  "clientId": "",
+  "redirectUri": ""
+}
+```
+response
+```json
+{
+  "access_token": "",
+  "expires_in": 300,
+  "refresh_expires_in": 1800,
+  "refresh_token": "",
+  "token_type": "",
+  "id_token": "",
+  "not-before-policy": 0,
+  "session_state": "",
+  "scope": ""
+}
+
+```
+
 ## Support
 
 Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
