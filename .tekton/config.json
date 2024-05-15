@@ -1,0 +1,9 @@
+{
+  "project": "aolda",
+  "image": "auth",
+  "dockerfile": ".deploy/Dockerfile",
+  "context": "./",
+  "platform": "linux/amd64",
+  "replicas": 1,
+  "port": 8000
+}
